@@ -1,20 +1,10 @@
-# java
-
-String형 배열 seoul에서 Kim의 위치를 찾아 반환하는 solution을 완성하세요.
-seoul에 Kim은 오직 한 번만 나타난다.
-
-
-입출력 예
-seoul = {Jane, Kim}
-
-return	김서방은 1에 있다
-
-```java
+package algorithmSorce;
 
 import java.util.Arrays;
 
-class Solution {
-	public String solution(String[] seoul) {
+public class FindingInArray {
+	public String findingInArray(String[] seoul) {
+		
 		String answer = "김서방은 %d에 있다";
 		
 		/*
@@ -27,6 +17,6 @@ class Solution {
 		*/
 		
 		return String.format(answer, Arrays.asList(seoul).indexOf("Kim"));
+				
 	}
 }
-```
