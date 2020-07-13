@@ -12,18 +12,18 @@ public class Main {
 
 		int a = Integer.parseInt(bufferedReader.readLine());
 		int b = Integer.parseInt(bufferedReader.readLine());
-		
+
 		bufferedReader.close();
-		
+
 		BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		bufferedWriter.write(a * (b % 10) + "\n");
 		bufferedWriter.write(a * ((b % 100) / 10) + "\n");
 		bufferedWriter.write(a * (b / 100) + "\n");
 		bufferedWriter.write(a * b + "\n");
-		
+
 		bufferedWriter.flush();
 		bufferedWriter.close();
-		
+
 	}
 }

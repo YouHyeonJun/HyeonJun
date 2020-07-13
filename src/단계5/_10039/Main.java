@@ -1,4 +1,4 @@
-package 단계2;
+package 단계5._10039;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
