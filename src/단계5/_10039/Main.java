@@ -12,8 +12,20 @@ public class Main {
 
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-		BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
+		int sum = 0;
+
+		for (int i = 0; i < 5; i++) {
+			int score = Integer.parseInt(bufferedReader.readLine());
+
+			if (score > 40) {
+				sum += score;
+			} else {
+				sum += 40;
+			}
+
+		}
+		
+		System.out.println(sum / 5);
 
 	}
-
 }
